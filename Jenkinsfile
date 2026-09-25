@@ -5,6 +5,7 @@ pipeline{
     stages{
         stage("Code clone"){
             steps{
+                echo "Cloning the code from git to jenkins"
                 sh "whoami"
             clone("https://github.com/LondheShubham153/django-notes-app.git","main")
             }
